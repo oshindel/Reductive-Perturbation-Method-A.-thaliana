@@ -46,7 +46,7 @@ Output will be arrays / cell arrays:
 1. Data_amp, Data_freq: data points
 2. BP, criticalValues: bifurcation parameter (which degradation rate) and corresponding critical point.
 3. Lambda1, G, Omega0: Stuart-Landau parameters
-4. Omega_s, RR_s: &omega;<sub>s<\sub> and R<sub>s<\sub> from each model
+4. Omega_s, RR_s: &omega;<sub>s</sub> and R<sub>s</sub> from each model
 5. mu1, mu: independent variables for plotting purposes
 Save workspace to save data for later
 6. One plot: Scaled amp/freq vs. &mu; of all models on one plot
@@ -66,8 +66,8 @@ Grand_MostDataPoints.m runs the simulation for all models and uses the bifurcati
 4. Circadian_syms_[ModelName].m, which is the function file including all ODEs.  This file is identical to item 3, but all the parameters and variables are symbolic variables using MATLAB Symbolic Toolbox.
 5. Filter.m, which finds all degradation rates that lead to bifurcation.  The searching range of bifurcation is between 0 to the optimal value.  The critical values are also generated through this process.
 6. Solve_cp.m, which solves for critical values of the bifurcation parameter with given range.  The function uses binary search.
-7. Generate_values.m, which, for each degradation rates that lead to a bifurcation, calculates Stuart-Landau parameters &omega;<sub>0<\sub> and _g=g'+ig''_, as well as the eigenvalues and eigenvectors of the Jacobian evaluated at criticality.
-8. Calc_sigma_omega.m which, for each degradation rates that lead to a bifurcation, calculates the values of &sigma;<sub>1<\sub> and &omega;<sub>1<\sub>.
+7. Generate_values.m, which, for each degradation rates that lead to a bifurcation, calculates Stuart-Landau parameters &omega;<sub>0</sub> and _g=g'+ig''_, as well as the eigenvalues and eigenvectors of the Jacobian evaluated at criticality.
+8. Calc_sigma_omega.m which, for each degradation rates that lead to a bifurcation, calculates the values of &sigma;<sub>1</sub> and &omega;<sub>1</sub>.
 9. Calc_lambdas.m, which returns the two eigenvalues with largest real parts.  These two eigenvalues should be complex conjugate of each other.
 10. Jacobian.m, which generates the symbolic Jacobian of the system of equations, _L_.
 11. third_tensor.m, which generates the symbolic third degree tensor of the system of equations, _M_.
