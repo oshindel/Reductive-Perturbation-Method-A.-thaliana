@@ -40,7 +40,7 @@ To run one individual model:
 2. Run first two sections
 3. Find the corresponding model section in section 3, run the first two lines under the model (addpath & main_modelname) OR open corresponding folder and run Main_[ModelName].m.
 
-sere is a description of the files:
+Here is a description of the files:
 The MATLAB\_Code folder contains the Grand\_MostDataPoints.m file, and ten folders, one for each model.
 Grand\_MostDataPoints.m runs the simulation for all models and uses the bifurcation parameter that gives the most data points on bifurcation diagrams with the set percentage error criteria.  Each model folder contains the following files:
 
